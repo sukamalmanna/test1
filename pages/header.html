@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <script src="https://kit.fontawesome.com/96abfe18a6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="logo">
+            <img src="../Images/logo.png" alt="manna_logo">
+        </div>
+        <div class="menuToggle ">Menu</div>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="name"><span data-text="Home">Home</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-gears"></i>
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="name"><span data-text="Services">Services</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/contact.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+            $('.menuToggle').click(function () {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>
